@@ -1,5 +1,7 @@
 #!/usr/bin/python
 
+#@reaperb0t
+#IST 885 Penn State University
 from flask import Flask
 from flask import request
 from flask import render_template
@@ -13,8 +15,6 @@ def citrus():
 @app.route('/', methods=['POST'])
 def citrus_post():
     text = request.form['text']
-    #processed_text = text.upper()
-    #print(processed_text)
     print(text)
     return redirect('/')
 
